@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
     $.ajax({
         type: 'GET',
         url: 'https://api.github.com/users/rakeshdas1/repos',
@@ -13,6 +12,4 @@ $(document).ready(function(){
         });
         }
     });
-
-
 });
