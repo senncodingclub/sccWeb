@@ -22,7 +22,7 @@
         echo "Results:\n";
         echo shell_exec('git -reset origin master');
 		// change permissions
-	echo "Changing permissions on repo files to 0775: ".shell_exec('chmod -R 0755 *')."\n";
+	echo "Changing permissions on repo files to 0775: ".shell_exec('chmod -R 0775 *')."\n";
 
     }
 	else {
