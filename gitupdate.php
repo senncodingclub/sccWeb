@@ -10,10 +10,10 @@
 	 */
 
 		// examine the payload - if there is one proceed
-	if ($_POST['Payload']) {
+	if ($_REQUEST['payload']) {
 		
             // decode the payload
-        $payload = json_decode ($_POST['Payload'], true);
+        $payload = json_decode ($_REQUEST['payload'], true);
         
         echo "Pulling repository named: ".$payload['repository']['full_name']."\n";
         echo "Triggered by user: ".$payload['sender']['login']."\n";
