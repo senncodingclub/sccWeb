@@ -17,10 +17,10 @@
         
         echo "Pulling repository named: ".$payload['repository']['full_name']."\n";
         echo "Triggered by user: ".$payload['sender']['login']."\n";
-			// when deploying use the git pull command
-        echo "Running git pull.\n";
+			// when deploying use the git reset --hard origin/master command
+        echo "Running git reset --hard origin/master .\n";
         echo "Results:\n";
-        echo shell_exec('git pull');
+        echo shell_exec('git reset --hard origin/master');
 		// change permissions
 	echo "Changing permissions on repo files to 0775: ".shell_exec('chmod -R 0775 *')."\n";
 		/** IMPORTANT: change the group in this line **/
