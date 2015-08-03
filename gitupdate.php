@@ -17,10 +17,10 @@
         
         echo "Pulling repository named: ".$payload['repository']['full_name']."\n";
         echo "Triggered by user: ".$payload['sender']['login']."\n";
-			// execute the git pull
-        echo "Running git pull\n";
+			// when deploying use the rest command
+        echo "Running git reset origin master\n";
         echo "Results:\n";
-        echo shell_exec('git pull');
+        echo shell_exec('git -reset origin master');
 		// change permissions
 	echo "Changing permissions on repo files to 0775: ".shell_exec('chmod -R 0755 *')."\n";
 
