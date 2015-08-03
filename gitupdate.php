@@ -21,6 +21,10 @@
         echo "Running git pull\n";
         echo "Results:\n";
         echo shell_exec('git pull');
+	
+	echo "Changing permissions on repo files to 0775.\n";
+	chmod("./*", 0775);
+
     }
 	else {
 		echo "No payload was provided. No action taken.\n";	
