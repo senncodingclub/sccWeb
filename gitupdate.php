@@ -21,9 +21,8 @@
         echo "Running git pull\n";
         echo "Results:\n";
         echo shell_exec('git pull');
-	
-	echo "Changing permissions on repo files to 0775.\n";
-	chmod("./*", 0775);
+		// change permissions
+	echo "Changing permissions on repo files to 0775: ".shell_exec('chmod -R 0755 *')."\n";
 
     }
 	else {
