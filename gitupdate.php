@@ -17,8 +17,12 @@
         
         echo "Pulling repository named: ".$payload['repository']['full_name']."\n";
         echo "Triggered by user: ".$payload['sender']['login']."\n";
-			// when deploying use the git reset --hard origin/master command
-        echo "Running git reset --hard origin/master .\n";
+	echo "Running git fetch origin.\n";
+	echo "Results:\n";
+	echo shell_exec('git fetch origin');
+	
+		// when deploying use the git reset --hard origin/master command
+        echo "Running git reset --hard origin/master\n";
         echo "Results:\n";
         echo shell_exec('git reset --hard origin/master');
 		// change permissions
