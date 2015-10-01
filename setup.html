@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Senn Coding Club - Intermediate Project Setup</title>
+</head>
+<body>
+    <h1>Senn Coding Club - Intermediate Project Setup</h1>
+    <p>Intermediate Coding Club members have their own web space where their work will get 
+    pushed. To get your project space setup, follow these steps:</p>
+    
+    <ol>
+        <li>Request Web space from an administrator (JC or Rakesh).</li>
+        <li>Set up an account on <a href="https://github.com">GitHub</a>.</li>
+        <li>In GitHub, create a repository called &quot;&quot;.</li>
+        <li>On your local computer, create a folder called &quot;sccgmaes&quot; in your download folder.</li>
+        <li>Download the following files:
+            <ul>
+                <li><a href="game.html">game.html</a></li>
+                <li><a href="gitupdate.php_">gitupdate.php_</a></li>
+                <li><a href="game.js">game.js</a></li>
+            </ul>    
+        </li>
+        <li>Change the &quot;gitupdate.php_&quot; to &quot;gitupdate.php&quot;</li>
+    </ol>
+    <li>Using the Git command line, issue the following commands from within your download folder:</li>
+        <ul>
+            <li><code>git clone https://github.com/username/repository .</code> (change username to your GitHub username).</li>
+            <li><code>git config --global user.name "YOUR NAME"</code></li>
+            <li><code>git add game.html</code></li>
+            <li><code>git add gitupdate.php</code></li>
+            <li><code>git add game.js</code></li>
+            <li><code>git commit -m"Initial setup"</code></li>
+            <li><code>git push</code></li>
+        </ul>
+    </li>
+    <li>Inform an administrator that your repository is setup. The admin will get your repo into the project space.</li>
+    <li>In GitHub, go to Settings, Webhooks. Add the following Web hook URL: https://senncodingclub.org/projects/username/gitupdate.php (replace username with your Senn Coding Club user name.</li>
+    <li>Change the content-type to application/x-www-form-urlencoded.</li>
+    <li>Your project space will be available at https://senncodinglcub.org/projects/username/</li>
+</body>
+
+</html>
