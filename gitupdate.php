@@ -19,7 +19,7 @@
         echo "Triggered by user: ".$payload['sender']['login']."\n";
 	echo "Running git fetch origin.\n";
 	echo "Results:\n";
-	echo shell_exec('git fetch origin');
+	echo shell_exec('git fetch --all');
 	
 		// when deploying use the git reset --hard origin/master command
         echo "Running git reset --hard origin/master\n";
