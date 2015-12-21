@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset="UTF-8">
+    <title>How to Git!</title>
+	<meta name="Author" content=""/>
+	<!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-53946652-3', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+</head>
+<body>
+    <section id="git">
+        <div class="container wow bounceInLeft">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">How to use git to manage your HTML pages</h2>
+                    <hr class="primary">
+                    <p>Git is an awesome version control system or VCS. The point of VCS is so that you can keep track of your projects and code. You might have heard of Github before and probably think that Git and Github is the same thing. This is a very common misconception, but they are not the same thing. Git the is the protocol that is used for VCS, while Github supports that protocol and is useful for backing up your code. Github is the industry standard for open source projects and is a really great time killer if you want to explore awesome stuff that people are creating. The way that we can use Git and Github is by using the Git command line tool to upload our projects to Github (which we’ve already done).</p>
+                    <div class="text-left">
+                        <p>To download your project from Github:</p>
+                        <ol>
+                            <li>Download the Git command line from <a href="https://git-scm.com/downloads">here</a></li>
+                            <li>Install Git using the default options - you don't need to change anything</li>
+                            <li>If you are on a Windows machine:</li>
+                            <ul>
+                                <li>Open the start menu and search for <code>Git</code></li>
+                                <li>Open the program called <code>Git Bash</code></li>
+                                <li>Type in the command <code>git --version</code> and press enter</li>
+                                <li>If the output is something like <code>git version 1.9.4...</code>, then you're good!</li>
+                                <li>If not, then you should try reinstalling Git </li>
+                            </ul>
+                            <li>If you are on a Mac:</li>
+                            <ul>
+                                <li>Do a spotlight search for <code>terminal</code> and open it</li>
+                                <li>Type in the command <code>git --version</code> and press enter</li>
+                                <li>If the output is something like <code>git version 1.9.4...</code>, then you're good!</li>
+                                <li>If not, then you should try reinstalling Git </li>
+                            </ul>
+                            <li>With the terminal or Git Bash open, we have to change into a directory where we would like to download our project into.</li>
+                            <li>To change directories (directory = folder), we use the command <code>cd</code></li>
+                            <li>We can use a multitude of directories to store our projects, but I like to use the Downloads folder, which is located in <code>~/Downloads</code>.</li>
+                            <li>You can use another directory as well if you wish such as:</li>
+                            <ul>
+                                <li>Desktop: <code>~/Desktop</code></li>
+                                <li>Downloads: <code>~/Downloads</code></li>
+                                <li>And so on and so forth....</li>
+                            </ul>
+                            <li>To change into a directory, use the command <code>cd [Name of directory]</code></li>
+                            <ul>
+                                <li>To change into the Downloads folder, type in the command <code>cd ~/Downloads</code>
+<span class="label label-default">Make sure you pay attention to the capilization when entering these commands!</span></li>
+                            </ul>
+                            <li>Now to actually download the code we have uploaded into the Github repository, we run the command <code>git clone https://github.com/[github username]/[name of the repository]</code></li>
+                            <ul>
+                                <li>When we created the Github repo at coding club, we all named it <code>senncodingclub</code>, but login to your github to make sure it isn't different in terms of capitalization or the name itself.</li>
+                                <li>To download our code, we can run the command <code>git clone https://github.com/[github username]/[name of the repository]</code> and press enter.</li>
+                                <li>E.G., for my repo, I can run the command <code>git clone https://github.com/rakeshdas1/senncodingclub</code>, since my Github username is <em>rakeshdas1</em> and my repo's name is <em>senncodingclub</em></li>
+                                
+                            </ul>
+                            <li> Now the code should be downloaded into a folder named whatever you named your repo</li>
+                        </ol>
+                        <p>To edit your HTML and make an awesome webpage:</p>
+                        <ol>
+                            <li>Download Brackets from <a href="http://brackets.io/">here</a>.</li>
+                            <li>Install Brackets with all the default options.</li>
+                            <li>Open Brackets</li>
+                            <li>Change the working directory by clicking on the <code>Getting Started</code> link on the upper left hand corner and choosing where you downloaded your code.</li>
+                            <li>Click on your <code>index.html</code> file on the upper right hand corner.</li>
+                            <li>Edit your HTML page and use <a href="http://www.w3schools.com/tags/default.asp">W3Schools</a> as a reference point.</li>
+                            <li>Save all your work</li>
+                        </ol>
+                        <p>To push your changes backup to Github:</p>
+                        <ol>
+                            <li>Open up Git Bash or your terminal again if you closed it</li>
+                            <li><code>cd</code>into the directory where you downloaded your code</li>
+                            <ul>
+                                <li>E.G., I downloaded my code into my downloads folder, so I can run the command <code>cd ~/Downloads/senncodingclub</code></li>
+                            </ul>
+                            <li>We have to inform Git of which files we changed by running the command <code>git add index.html</code>.</li>
+                            <li>Now we have to commit a change, which is basically a state of your project at a certain time. With this commit, we also have to attach a <code>commit message</code>, which is a small description of what you changed.</li>
+                            <ul>
+                                <li>To commit, we can run the command <code>git commit -m "your commit message"</code>.</li>
+                                <li>E.G., I ran the command <code>git commit -m "Added an image"</code> with my project.</li>
+                            </ul>
+                            <li>Run the command <code>git push</code> to push your code back up to Github</li>
+                            <ul>
+                                <li>This command will ask for your username and password to Github, so just enter those in when you are prompted to do so.</li>
+                            </ul>
+                            <li>You're done! You can check your Github repo on <a href="https://github.com">Github's</a> website now.</li>
+                        </ol>
+                    </div>                    
+
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>
